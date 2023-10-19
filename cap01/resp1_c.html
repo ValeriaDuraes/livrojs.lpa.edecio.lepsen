@@ -1,0 +1,11 @@
+<meta charset="utf-8">
+<script>
+  // Elaborar um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamento da loja. Calcule e informe o valor para pagamento à vista com 10% de desconto e o valor em 3x.
+  const productPrice = Number(prompt('Insira o valor do produto: '));
+  alert('As opções de pagamento são, parcelado em até 3x e à vista com 10% de desconto.');
+  const spotPriceDiscount = productPrice * 0.10;
+  const spotPrice = productPrice - spotPriceDiscount;
+  const termSalePrice = productPrice / 3;
+  alert(`O valor do produto desejado é R$${productPrice.toFixed(2)}, com pagamento à vista o valor cai para R$${spotPrice.toFixed(2)}, e a prazo fica em 3 parcelas de R$${termSalePrice.toFixed(2)}.`);
+
+</script>
